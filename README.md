@@ -12,3 +12,5 @@ Correct change is calculated and printed in largest denominations.
 
 
 This is [Skill Distillery](https://skilldistillery.com) week 1 Homework
+
+One week down.
