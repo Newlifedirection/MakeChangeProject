@@ -11,4 +11,4 @@ Correct change is calculated and printed in largest denominations.
 * register
 
 
-This is [Skill Distillery](https://skilldistillery.com)week 1 Homework
+This is [Skill Distillery](https://skilldistillery.com) week 1 Homework
