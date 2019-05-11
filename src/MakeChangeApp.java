@@ -9,7 +9,6 @@ public class MakeChangeApp {
 //		System.out.println("The price is $: " + price);
 		System.out.print("Enter amount paid $ (example 1, 5, 10, etc.): ");
 		double tendered = kb.nextDouble();
-		int answer = (int) (((tendered - price) + 0.0001) * 100);
 		int Fifties;
 		int Twenties;
 		int Tens = 0;
@@ -22,10 +21,12 @@ public class MakeChangeApp {
 
 //		System.out.println("answer" + answer);
 
-		if (tendered < price) {
+		while (tendered < price) {
 			System.out.println("Invalid, enter more money ");
-
+			tendered += kb.nextDouble();
 		}
+		int answer = (int) (((tendered - price) + 0.0001) * 100);
+		
 		if (tendered == price) {
 			System.out.println("Your change is $0 ");
 
@@ -40,7 +41,6 @@ public class MakeChangeApp {
 		if (tendered > price && answer > 2000) {
 			Twenties = answer / 2000;
 			answer = answer % 2000;
-//			System.out.println(answer);
 			System.out.println("Your change includes " + Twenties + " Twenties");
 
 		}
