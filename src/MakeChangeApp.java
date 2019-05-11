@@ -30,9 +30,30 @@ public class MakeChangeApp {
 			System.out.println("Your change is $0 ");
 
 		} else if (tendered > price && answer < 50) {
-			System.out.println("Your change is " + (tendered - price));
 			System.out.println("Your change includes " + (tendered / 2000));
+			
+		} else if (tendered > price && answer < 20) {
+			System.out.println("Your change includes " + (tendered / 1000));
+			
+		} else if (tendered > price && answer < 10) {
+			System.out.println("Your change includes " + (tendered / 500));
+			
+		} else if (tendered > price && answer < 5) {
+			System.out.println("Your change includes " + (tendered / 100));
+			
+		} else if (tendered > price && answer < 1) {
+			System.out.println("Your change includes " + (tendered / 25));
+			
+		} else if (tendered > price && answer < .25) {
+			System.out.println("Your change includes " + (tendered / 10));
+			
+		} else if (tendered > price && answer < .10) {
+			System.out.println("Your change includes " + (tendered / 5));
+			
+		} else {
+			System.out.println("Your change includes " + (answer) + "Pennies");
 		}
+		
 		// Prompt user for amount tendered, and get input
 		kb.close();
 	}
