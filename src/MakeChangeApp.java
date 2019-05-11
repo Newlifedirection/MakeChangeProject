@@ -9,6 +9,6 @@ public class MakeChangeApp {
 			double price = kb.nextDouble();
 			System.out.println("The price is $: " + price);
 		//Prompt user for amount tendered, and get input
+			kb.close();
 	}
-
 }
