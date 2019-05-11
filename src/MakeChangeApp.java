@@ -4,14 +4,21 @@ public class MakeChangeApp {
 	public static void main(String[] args) {
 		Scanner kb = new Scanner(System.in);
 
-		System.out.print("Enter the intem price $: ");
+		System.out.print("Enter the intem price $: \n");
+		double price = kb.nextDouble();
 		// Prompt user for value, and get input
-//		double price = kb.nextDouble();
 //		System.out.println("The price is $: " + price);
-		double tendered = kb.nextDouble();
 		System.out.print("Enter amount paid $ (either 1, 5, 10, or 20): ");
-		
+		double tendered = kb.nextDouble();
 		double tenderedIn = kb.nextDouble();
+
+		if (tendered < price) {
+			System.out.println("Invalid, enter more money ");
+
+		} else if (tendered == price) {
+			System.out.println("Your change is $0 ");
+
+		}
 		// Prompt user for amount tendered, and get input
 		kb.close();
 	}
