@@ -10,14 +10,16 @@ public class MakeChangeApp {
 //		System.out.println("The price is $: " + price);
 		System.out.print("Enter amount paid $ (either 1, 5, 10, or 20): ");
 		double tendered = kb.nextDouble();
-		double tenderedIn = kb.nextDouble();
-
+		int answer = (int) (((tendered - price) + 0.0001) * 100);
+		System.out.println("answer" + answer);
 		if (tendered < price) {
 			System.out.println("Invalid, enter more money ");
 
 		} else if (tendered == price) {
 			System.out.println("Your change is $0 ");
 
+		} else if (tendered > price) {
+			System.out.println("Your change is " + (tendered - price));
 		}
 		// Prompt user for amount tendered, and get input
 		kb.close();
