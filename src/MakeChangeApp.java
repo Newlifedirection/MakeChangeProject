@@ -4,7 +4,7 @@ public class MakeChangeApp {
 	public static void main(String[] args) {
 		Scanner kb = new Scanner(System.in);
 
-		System.out.print("Enter the intem price :$ \n");
+		System.out.print("Enter the item price :$ \n");
 		double price = kb.nextDouble();
 		System.out.print("Enter amount paid $ (example 1, 5, 10, etc.): ");
 		double tendered = kb.nextDouble();
